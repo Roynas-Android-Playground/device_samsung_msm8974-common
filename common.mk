@@ -16,6 +16,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Include debug tools
+$(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
